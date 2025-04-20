@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repo contains code that accompanies posts in my personal [blog](https://cosmovlad.github.io/blog/output/index.html). The names of the folders are the posting dates.
+This repo contains code that accompanies posts in my personal [blog](https://cosmovlad.github.io/blog/output/index.html) and [reproduce-a-paper](https://cosmovlad.github.io/reproduce-a-paper/output/index.html) notes. The names of the top-level folders are self-explanatory, and folders there in are named according to the posting dates.
 
 Some of the .py files are [jupytext](https://jupytext.readthedocs.io/en/latest/) versions of Jupyter notebooks. `jupytext` prevents Git from tracking any changes in outputs of a notebook and can be installed together with other necessary packages (see below). To open a jupytext-enabled .py file, right-click on it in a Jupyter server and choose Open With -> Notebook.
 
