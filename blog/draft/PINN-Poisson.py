@@ -102,3 +102,78 @@ ax.set_xlabel('$x$')
 ax.set_ylabel('$y$')
 
 # %%
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.interpolate import Akima1DInterpolator
+
+# Sample data
+x = np.array([0, 1, 2, 3, 4])
+y = np.array([0, 1, 0.5, 1.5, 1])
+
+# Create Akima spline
+akima = Akima1DInterpolator(x, y)
+
+# Interpolate at new points
+x_new = np.linspace(0, 4, 100)
+y_new = akima(x_new)
+
+# Plot
+plt.plot(x, y, 'o', label='Data Points')
+plt.plot(x_new, y_new, '-', label='Akima Spline')
+plt.legend()
+plt.show()
+
+
+# %%
+Msun = 5e-6  # s
+
+Mbh = 1e+9
+
+AU = 500.
+pc = 206000.
+
+Mbh*Msun / AU / pc
+
+# %%
+4.4*(1e+3/Mbh) / 10e-9 * (Mbh*Msun / AU / pc)
+
+# %%
+Mbh*100*Msun / AU / pc
+
+# %%
+2/7/86400
+
+# %%
+25400/42373
+
+# %%
+0.599438 * 3200
+
+# %%
+0.599438 * 2700
+
+# %%
+16920+53
+
+# %%
+42373-16973
+
+# %%
+25400-1618-1918
+
+# %%
+21864*0.0320
+
+# %%
+700 + 987
+
+# %%
+1736-1687
+
+# %%
+16920 / 42373
+
+# %%
+0.3993 * 1255
+
+# %%
